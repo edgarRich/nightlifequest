@@ -17,4 +17,10 @@ class _QRScannerPageState extends State<QRScannerPage> {
   String _lastScanned = '';
 
   @override
-  void
+  void MobileScanner(
+         onDetect: (barcode,args) {
+           final code = barcode.rawValue;
+           // call Supabase insert into checkins
+         },     
+  )
+}
