@@ -1,0 +1,14 @@
+import { serve } from "https://deno.land/std/http/server.ts";
+
+serve(async (req) => {
+  const { phone, amount, club_id } = await req.json();
+
+  // 1. Get OAuth token
+  // 2. Send STK push
+  // 3. Save pending payment
+
+  return new Response(
+    JSON.stringify({ status: "initiated" }),
+    { headers: { "Content-Type": "application/json" } }
+  );
+});
