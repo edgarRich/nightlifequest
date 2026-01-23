@@ -20,7 +20,7 @@ class NightlifeQuestApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp.router(
       title: 'Nightlife Quest',
-      theme: AppTheme.lightTheme,
+      theme: AppTheme.light(Color(0xFF2563EB)),
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.dark,
       routerConfig: _router,
